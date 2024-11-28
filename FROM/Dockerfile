@@ -1,3 +1,3 @@
 FROM almalinux:9
-label author= "naveen" \
+LABEL author= "naveen" \
       course= "devops"
