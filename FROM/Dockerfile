@@ -1,6 +1,4 @@
-FROM almalinux:9
-RUN useradd expense
-USER expense
-CMD ["sleep","100"]
-
-
+FROM ubuntu:20.04
+RUN useradd -m appuser
+USER appuser
+CMD ["whoami"]
