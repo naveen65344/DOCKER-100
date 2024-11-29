@@ -1,4 +1,5 @@
 FROM ubuntu:20.04
-RUN useradd -m appuser
-USER appuser
-CMD ["whoami"]
+RUN mkdir /tmp/docker
+WORKDIR /tmp/docker
+RUN echo "hi">hi.html
+CMD ["sleep","100"]
