@@ -1,5 +1,6 @@
 FROM almalinux:9
-CMD ["google.com"]
-ENTRYPOINT ["ping"]
+RUN useradd expense
+USER expense
+CMD ["sleep","100"]
 
 
