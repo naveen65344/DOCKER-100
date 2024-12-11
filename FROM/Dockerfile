@@ -1,3 +1,3 @@
 FROM almalinux
 RUN dnf install nginx -y
-RUN git -y
+CMD ["nginx","-g","daemon-off"]
