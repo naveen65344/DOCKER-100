@@ -1,6 +1,8 @@
-FROM almalinux
+ARG version="1.0"
+FROM almalinux:$version
+
 RUN dnf install nginx -y 
-ENV course="devops"
+ARG course="devops"
 ARG duration="120"
 RUN echo "$course"
 
