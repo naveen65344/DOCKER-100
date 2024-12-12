@@ -1,3 +1,4 @@
+
 FROM almalinux
-CMD ["google.com"]
-ENTRYPOINT ["ping"]
+RUN dnf install nginx -y
+COPY index.html /usr/share/nginx/html
