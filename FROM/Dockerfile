@@ -1,4 +1,4 @@
-ARG version="1.0"
+ARG version="latest"
 FROM almalinux:$version
 
 RUN dnf install nginx -y 
