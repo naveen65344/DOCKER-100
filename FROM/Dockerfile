@@ -3,7 +3,7 @@ FROM almalinux:$version
 
 RUN dnf install nginx -y 
 ARG course="devops"
-ARG duration="120"
+ENV duration=$course
 RUN echo "$course"
 RUN echo "version"
 
