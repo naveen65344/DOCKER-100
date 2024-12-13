@@ -1,4 +1,4 @@
-ARG version=latest
+FROM almalinux
 
 RUN dnf install nginx -y
 RUN rm -f /usr/share/nginx/html/index.html
