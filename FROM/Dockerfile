@@ -1,4 +1,4 @@
-ARG version:latest
+ARG version=latest
 FROM almalinux:"$version"
 ENV course="devops"
 RUN echo $course
