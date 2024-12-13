@@ -1,6 +1,7 @@
 ARG version=latest
 FROM almalinux:"$version"
-ENV course="devops"
+ARG course="devops"
+ENV course=$course
 RUN echo $course
 RUN echo $version
 RUN dnf install nginx -y
