@@ -1,3 +1,4 @@
 FROM almalinux
-CMD ["facebook.com"]
-ENTRYPOINT ["ping"]
+LABEL name="naveen" \
+RUN dnf install nginx -y
+CMD [ "nginx","-g","daemon off;" ]
