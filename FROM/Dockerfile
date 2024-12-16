@@ -1,3 +1,2 @@
 FROM almalinux
-ENTRYPOINT ["ping"]
-CMD ["facebook.com"]
+CMD["ping","google.com"]
