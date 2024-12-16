@@ -2,5 +2,5 @@ FROM almalinux
 ENV name="naveen"
 RUN dnf install nginx -y
 
-echo "$name"
+RUN echo "$name"
 CMD [ "nginx","-g","daemon off;" ]
