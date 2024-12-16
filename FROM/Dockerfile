@@ -1,5 +1,5 @@
 FROM almalinux
-ENV name="naveen"
+ARG name="naveen"
 RUN dnf install nginx -y
 
 RUN echo "$name"
