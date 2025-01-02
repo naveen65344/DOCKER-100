@@ -1,4 +1,5 @@
-FROM almalinux
+ARG version
+FROM almalinux:${version}
 ARG name="naveen" \
      course="devops"
 RUN echo "$name"     
