@@ -1,3 +1,4 @@
 FROM almalinux
-CMD ["facebook.com"]
-ENTRYPOINT ["ping"]
+ARG name="naveen" \
+     course="devops"
+CMD ["sleep","100"]     
